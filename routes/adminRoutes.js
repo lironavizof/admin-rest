@@ -1,10 +1,6 @@
 const express = require('express');
 const router = express.Router();
-/*
- * Admin routes.
- * This router is responsible for admin-related endpoints, such as returning
- * the developers team members (the "about" endpoint).
- */
+
 
 // GET /api/about
 // Returns a JSON array of the team members (first_name + last_name only).

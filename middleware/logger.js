@@ -24,7 +24,7 @@ module.exports = function Logger(req, res, next) {
             logger.info(doc);
 
 
-            const baseUrl = process.env.LOG_SERVICE_URL; // למשל: http://localhost:3003
+            const baseUrl = process.env.LOG_SERVICE_URL;
             if (baseUrl) {
                 await axios.post(`${baseUrl}/api/logs`, doc, { timeout: 1500 });
             }
