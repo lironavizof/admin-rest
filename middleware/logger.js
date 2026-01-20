@@ -1,3 +1,11 @@
+/*
+ * request logger middleware:
+ * runs on every HTTP request
+ * writes a log to console (pino)
+ * also sends the log to the log-service (/api/logs)
+ * note: the actual sending happens after the response is finished.
+ */
+
 const axios = require('axios');
 const pino = require('pino');
 

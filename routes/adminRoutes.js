@@ -2,8 +2,8 @@ const express = require('express');
 const router = express.Router();
 
 
-// GET /api/about
-// Returns a JSON array of the team members (first_name + last_name only).
+/* GET /api/about
+ * Returns a JSON array of the team members (first_name + last_name only). */
 router.get('/about', (req, res) => {
     try {
 
